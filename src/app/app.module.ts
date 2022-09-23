@@ -13,6 +13,7 @@ import { FormularioprimeroComponent } from './formularioprimero/formularioprimer
 import { FormulariosegundoComponent } from './formulariosegundo/formulariosegundo.component';
 
 import { environment } from '../environments/environment';
+import { PhonePipe } from './phone.pipe';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { environment } from '../environments/environment';
     ConfirmComponent,
     StatusCartComponent,
     FormularioprimeroComponent,
-    FormulariosegundoComponent, 
+    FormulariosegundoComponent,
+    PhonePipe, 
  
   ],
   imports: [

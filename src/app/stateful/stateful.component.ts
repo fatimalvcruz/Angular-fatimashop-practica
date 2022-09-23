@@ -19,6 +19,7 @@ export class StatefulComponent implements OnInit, OnDestroy {
   errorHttp: boolean;
   shopModel: any;
   boughtItems: Array<Product>;
+  myNumber = "123456789";
 
   private shopSubscription: Subscription;
 
