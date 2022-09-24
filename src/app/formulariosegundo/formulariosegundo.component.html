@@ -1,14 +1,6 @@
 <section id="forms"  >
-  
-
-
-
     <form [formGroup]="formulario" (ngSubmit)="onSubmit(formulario)" novalidate>
-
-
       <fieldset id="forms__input">
-
-
         <legend>Registro</legend>
         <p>
           <label class="form-label" for="name" >Nombre</label>
@@ -24,16 +16,10 @@
           </p>
         <span *ngIf="formulario.get('name').hasError('required')">Todos los campos son requeridos</span>
         <br>
- 
-     
         <!-- {{formulario.controls.email.errors | json}} -->
         
         <!-- {{formulario.controls.user.errors | json}} -->
-   
-
         <p><button class="btn btn-primary" type="submit" [disabled]="!formulario.valid">Enviar</button></p>
-
-
-        </fieldset>
-        </form>
-    </section>
+      </fieldset>
+    </form>
+</section>
